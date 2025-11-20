@@ -1,0 +1,19 @@
+{
+  "name": "tpv-bar-react-node",
+  "version": "1.0.0",
+  "description": "TPV Bar Restaurante - Node React Offline",
+  "main": "server/index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm start",
+    "build": "cd client && npm run build",
+    "electron": "electron electron/main.js",
+    "dist": "electron-builder"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0",
+    "electron": "^27.0.0",
+    "electron-builder": "^24.6.4"
+  }
+}

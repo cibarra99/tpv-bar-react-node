@@ -1,0 +1,34 @@
+Cliente: http://localhost:3000
+Servidor: http://localhost:5000
+Impresoras
+Edita .env:
+Copy
+PRINTER_BAR=192.168.1.100:9100
+PRINTER_KITCHEN=192.168.1.101:9100
+Build Windows
+bash
+Copy
+npm run build
+npm run dist   # genera instalador .exe
+Estructura
+/client → React PWA
+/server → Node + Express + SQLite/Postgres
+/electron → Wrapper Windows
+Copy
+
+Guarda → súbelo.
+
+---
+
+### ✅ ¡Subida completa!
+Ahora en GitHub verás todos los archivos.  
+ Solo falta:
+
+1. **Instalar dependencias** (en local):
+   ```bash
+   npm install
+   cd server && npm install && cd ../client && npm install
+Arrancar:
+bash
+Copy
+npm run dev
